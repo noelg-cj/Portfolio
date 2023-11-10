@@ -1,7 +1,7 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const symbols = "!@#$%^&*()_+><?/.,"
 
-const text = document.querySelector("p");
+const text = document.querySelector(".jittery-text");
 
 console.log("hi", text);
 
@@ -21,7 +21,6 @@ text.onmouseover = event => {
         iterations += 1 / 3;
 
     }, 50)
-    console.log("hovered")
 }
 
 function getRandomCharacter(letter) {

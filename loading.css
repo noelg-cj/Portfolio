@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-p {
+.jittery-text {
     color: var(--ivory);
     font-family: 'Noto Sans Mono';
     font-size: 5rem;
