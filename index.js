@@ -1,0 +1,1 @@
+let letters = document.querySelectorAll('.scroll-text')
