@@ -71,15 +71,6 @@ nav {
     transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.bg-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    z-index: 0;
-}
-
 main {
     background: url("assets/pattern2.png") center 85% /cover;
     display: flex;
@@ -232,6 +223,41 @@ p.stack-title {
     width: auto;
     transform: rotate(-90deg) translateX(10px);
     visibility: unset;
+}
+
+@media (max-width: 900px) {
+    main {
+        justify-content: end;
+        background: url("assets/pattern2.png") center -100px /cover;
+    }
+    .main-title {
+        font-size: 4rem;
+    }
+
+    .main-description {
+        font-size: 1.3rem;
+    }
+
+    .nav-items {
+        gap: 10px;
+    }
+
+    .main-title-container {
+        margin: 0 auto;
+    }
+
+    .second {
+        margin-left: 100px;
+    }
+
+    .second svg {
+        width: 90px;
+        height: 90px;
+    }
+
+    .main-description {
+        margin-bottom: 40px;
+    }
 }
 
 @keyframes spin {
