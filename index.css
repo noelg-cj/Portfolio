@@ -60,7 +60,6 @@ nav {
 
 .bg-image {
     position: absolute;
-    height: 100vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -69,7 +68,7 @@ nav {
 }
 
 main {
-    background: url("assets/pattern1.png") center 85% /cover;
+    background: url("assets/pattern2.png") center 85% /cover;
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -102,9 +101,12 @@ main {
     text-align: center;
 }
 
-.scroll-indication {
+.scroll {
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
+}
+
+.scroll-indication {
     cursor: pointer;
     background-color: var(--ivory);
     width: 64px;
@@ -121,6 +123,21 @@ main {
     transform: scale(1.2);
 }
 
+
+.scroll-text {
+    color: var(--ivory);
+    font-family: 'DM Sans';
+    position: absolute;
+    top: -50px;
+    left: 30px;
+}
+
+.scroll-text span {
+    position: absolute;
+    transform-origin: 0 80px;
+    font-size: 1.2rem;
+}
+
 .landing-contact {
     color: white;
     position: absolute;
@@ -134,4 +151,13 @@ main {
     border-radius: 50%;
     bottom: 50px;
     right: 80px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
