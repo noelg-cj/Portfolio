@@ -8,6 +8,7 @@
     --ivory: #E6E6FA;
     --jet-black: #0A0A0A;
     --grey: #8e98c0;
+    --primary: #0476D0;
     --secondary: #069DBF;
 }
 
@@ -199,6 +200,32 @@ p.stack-title {
 .skill {
     border-bottom: 1px solid black;
     margin-top: 10px;
+    /* cursor: none; */
+}
+
+.skill p {
+    margin-left: 30px;
+    transition: .2s;
+}
+
+.skill:hover p {
+    color: var(--primary);
+    margin-left: 60px;
+}
+
+.skill::before {
+    content: url("assets/arrow-down-2.png");
+    padding-right: 20px;
+    transition: all .1s;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+}
+
+.skill:hover::before {
+    width: auto;
+    transform: rotate(-90deg) translateX(10px);
+    visibility: unset;
 }
 
 @keyframes spin {
