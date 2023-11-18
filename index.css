@@ -10,6 +10,7 @@
     --grey: #8e98c0;
     --primary: #0476D0;
     --secondary: #069DBF;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -53,7 +54,12 @@ nav {
     transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.nav-item:hover, .nav-item.outsource:hover {
+.nav-item a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.nav-item:hover, .nav-item.outsource:hover, .nav-item a:hover {
     border-color: var(--ivory);
     color: var(--ivory);
     cursor: pointer;
