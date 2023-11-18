@@ -16,7 +16,9 @@
     height: 100vh;
     background-color: var(--jet-black);
     padding: 60px;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: -1;
 }
 
 nav {
@@ -151,6 +153,12 @@ main {
     border-radius: 50%;
     bottom: 50px;
     right: 80px;
+}
+
+.skills {
+    background-color: var(--ivory);
+    height: 100vh;
+    border-radius: 16px 16px 0 0;
 }
 
 @keyframes spin {
