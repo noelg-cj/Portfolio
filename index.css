@@ -162,7 +162,6 @@ main {
 .skills {
     background-color: var(--ivory);
     color: var(--jet-black);
-    height: 100vh;
     border-radius: 16px 16px 0 0;
     position: relative;
     z-index: 10;
@@ -179,6 +178,27 @@ main {
 .skills-descr {
     font-family: 'DM Sans', sans-serif;
     font-size: 2rem;
+}
+
+.stack-container {
+    margin-top: 100px;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3rem;
+}
+
+p.stack-title {
+    flex: 2;
+}
+
+.stack-list-container {
+    flex: 3;
+    list-style: none;
+}
+
+.skill {
+    border-bottom: 1px solid black;
+    margin-top: 10px;
 }
 
 @keyframes spin {
