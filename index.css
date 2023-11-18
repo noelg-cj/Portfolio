@@ -161,10 +161,24 @@ main {
 
 .skills {
     background-color: var(--ivory);
+    color: var(--jet-black);
     height: 100vh;
     border-radius: 16px 16px 0 0;
     position: relative;
     z-index: 10;
+    padding: 150px 100px;
+}
+
+
+.skills-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+.skills-descr {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
 }
 
 @keyframes spin {
