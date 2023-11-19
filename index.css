@@ -318,6 +318,7 @@ p.stack-title {
         padding-bottom: 100px;
         background-size: 300%;
         background-repeat: no-repeat;
+        background-position-y: -30%;
     }
     .second svg {
         display: none;

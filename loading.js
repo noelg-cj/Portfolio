@@ -1,23 +1,29 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const symbols = "!@#$%^&*()_+><?/.,"
 
+const loading_container = document.querySelector(".loading-container");
 const text = document.querySelector(".jittery-text");
 
-console.log("hi", text);
+console.log("hi", text, loading_container);
 
-text.onmouseover = event => {
+/* setTimeout(() => {
+    console.log("hi");
+    loading_container.style.display = "none";
+}, 4000); */
+
+window.onload = event => {
     let iterations = 0;
     const interval = setInterval(() => {
-        event.target.innerText = event.target.innerText.split("")
+        text.innerText = text.innerText.split("")
         .map((letter, index) => { 
             if (index < iterations) {
-                return event.target.dataset.title[index];
+                return text.dataset.title[index];
             }
             else return getRandomCharacter(letter);
         })
         .join("");
 
-        if (iterations > event.target.innerText.length) clearInterval(interval)
+        if (iterations > text.innerText.length) clearInterval(interval)
         iterations += 1 / 3;
 
     }, 50)
