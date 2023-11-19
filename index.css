@@ -299,9 +299,17 @@ p.stack-title {
         height: 70px;
     }
 
+    .skills-header {
+        font-size: 4rem;
+    }
+
+    .skills-descr {
+        font-size: 1.5rem;
+    }
+
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
     .second svg {
         display: none;
     }
@@ -312,6 +320,14 @@ p.stack-title {
 
     .second {
         margin: 0;
+    }
+
+    .skills {
+        padding: 100px 30px;
+    }
+
+    .skill {
+        font-size: 2rem;
     }
 }
 
