@@ -6,10 +6,10 @@ const text = document.querySelector(".jittery-text");
 
 console.log("hi", text, loading_container);
 
-/* setTimeout(() => {
+setTimeout(() => {
     console.log("hi");
     loading_container.style.display = "none";
-}, 4000); */
+}, 4000);
 
 window.onload = event => {
     let iterations = 0;
