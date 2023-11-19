@@ -310,6 +310,9 @@ p.stack-title {
 }
 
 @media (max-width: 520px) {
+    .homepage {
+        padding: 30px;
+    }
     .second svg {
         display: none;
     }
@@ -324,6 +327,10 @@ p.stack-title {
 
     .skills {
         padding: 100px 30px;
+    }
+
+    .stack-title {
+        font-size: 2rem;
     }
 
     .skill {
