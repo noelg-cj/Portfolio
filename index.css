@@ -313,12 +313,16 @@ p.stack-title {
     .homepage {
         padding: 10px;
     }
+
+    nav {
+        height: 100px;
+    }
     
     main {
         padding-bottom: 100px;
         background-size: 300%;
         background-repeat: no-repeat;
-        background-position-y: -30%;
+        background-position-y: -40%;
     }
     .second svg {
         display: none;
