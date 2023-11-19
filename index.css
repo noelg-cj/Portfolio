@@ -108,6 +108,7 @@ main {
 .scroll {
     position: absolute;
     bottom: 60px;
+    right: 5%;
 }
 
 .scroll-indication {
@@ -153,8 +154,8 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    bottom: 50px;
-    right: 80px;
+    bottom: 5%;
+    left: 5%;
 }
 
 .skills {
@@ -187,6 +188,7 @@ main {
 
 p.stack-title {
     flex: 2;
+    font-weight: 500;
 }
 
 .stack-list-container {
@@ -246,8 +248,8 @@ p.stack-title {
         margin: 0 auto;
     }
 
-    .second {
-        margin-left: 100px;
+    .first {
+        margin-left: 0px;
     }
 
     .second svg {
@@ -255,8 +257,61 @@ p.stack-title {
         height: 90px;
     }
 
+    .scroll-text, .landing-contact { 
+        display: none;
+    }
+
     .main-description {
         margin-bottom: 40px;
+    }
+
+    .stack-container {
+        flex-direction: column;
+    }
+
+    p.stack-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 725px) {
+    nav {
+        justify-content: center;
+    }
+    .nav-items {
+        display: none;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .second {
+        margin-top: 0px;
+    }
+
+    .second svg {
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .second svg {
+        display: none;
+    }
+
+    .main-title {
+        text-align: center;
+    }
+
+    .second {
+        margin: 0;
     }
 }
 
