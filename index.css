@@ -252,6 +252,21 @@ p.stack-title {
     visibility: unset;
 }
 
+@media (max-width: 1300px) {
+    .main-title {
+        font-size: 9rem;
+    }
+
+    .main-description {
+        font-size: 1.5rem;
+    }
+
+    .landing-contact {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 @media (max-width: 900px) {
     main {
         justify-content: end;
@@ -345,9 +360,9 @@ p.stack-title {
     
     main {
         padding-bottom: 100px;
-        background-size: 300%;
+        background-size: 900px;
         background-repeat: no-repeat;
-        background-position-y: -90%;
+        background-position: center -100px;
     }
     .second svg {
         display: none;
