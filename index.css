@@ -148,14 +148,39 @@ main {
     position: absolute;
     font-family: 'DM Sans';
     background-color: var(--secondary);
-    width: 100px;
-    height: 100px;
+    overflow: hidden;
+    width: 125px;
+    height: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     bottom: 5%;
     left: 5%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.landing-contact span {
+    position: relative;
+}
+
+.landing-contact::before {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: #0476D0;
+    top: var(--y);
+    left: var(--x);
+    transition: 0.5s;
+}
+
+.landing-contact:hover::before {
+    width: 400px;
+    height: 400px;
 }
 
 .skills {
@@ -225,6 +250,21 @@ p.stack-title {
     width: auto;
     transform: rotate(-90deg) translateX(10px);
     visibility: unset;
+}
+
+@media (max-width: 1300px) {
+    .main-title {
+        font-size: 9rem;
+    }
+
+    .main-description {
+        font-size: 1.5rem;
+    }
+
+    .landing-contact {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -320,9 +360,9 @@ p.stack-title {
     
     main {
         padding-bottom: 100px;
-        background-size: 300%;
+        background-size: 900px;
         background-repeat: no-repeat;
-        background-position-y: -40%;
+        background-position: center -100px;
     }
     .second svg {
         display: none;

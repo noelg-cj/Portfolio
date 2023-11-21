@@ -9,7 +9,7 @@ console.log("hi", text, loading_container);
 setTimeout(() => {
     console.log("hi");
     loading_container.style.display = "none";
-}, 4000);
+}, 0);
 
 window.onload = event => {
     let iterations = 0;
