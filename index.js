@@ -27,3 +27,10 @@ contact.addEventListener("mousemove", (e) => {
 contact.addEventListener("mouseout", e => {
     contact.style.transform = '';
 })
+
+window.onload = (e) => {
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+    })
+}
